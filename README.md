@@ -96,6 +96,10 @@ Run the file:
 ```bash
 sbatch test.sbatch
 ```
+
+Note: Checkpoint files have not been uploaded to the Git Repo as the files are very large. </br>
+
+
 ## Caution: The GPU on local systems/ jupyter notebook would not be sufficient to load the model, hence it is adviced to run on HPC Cluster </br>
 
 ## Running the Code on the Local System
