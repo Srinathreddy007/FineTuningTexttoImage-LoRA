@@ -159,7 +159,7 @@ python generate.py --prompt='a futuristic cityscape at sunset' --model_path='/sc
  </ul>
  
 ## Acknowledgements
- We used online resources like StackOverflow, GitHub repos, Kaggle Competition entries, ChatGPT and official PyTorch, numpy, matplotlib documentation and recitations by Karthik Garimella. 
+ We used online resources like StackOverflow, GitHub repos, HuggingFace Tutorials, Kaggle Competition entries, ChatGPT and official PyTorch, numpy, matplotlib documentation and recitations by Karthik Garimella. 
 
 ## System Specifications:
 Used NYU HPC Cluster to train the model
