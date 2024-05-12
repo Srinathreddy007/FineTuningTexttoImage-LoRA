@@ -1,0 +1,17 @@
+transformers 
+accelerate 
+pillow 
+wandb 
+safetensors
+datasets 
+peft 
+xformers
+huggingface_hub
+tqdm
+matplotlib
+torchinfo
+argparse
+torch
+torchinfo
+torchvision
+diffusers
