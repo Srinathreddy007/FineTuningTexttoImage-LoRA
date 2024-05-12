@@ -21,7 +21,7 @@ git clone https://github.com/Srinathreddy007/Fine_Tuning_TexttoImage_LoRA.git
 ### 3. Create a Conda Environment
 Create a conda environment in the scratch folder and initialize it:
 ```bash
-conda create --name /scratch/your_net_id/ENV_NAME python=3.11
+conda create --name /scratch/your_net_id/ENV_NAME python=3.10
 conda init
 ```
 
@@ -112,9 +112,9 @@ Navigate to the destination folder. Create the conda environment using the `.yml
 conda create --name /path/to/your/folder/ENV_NAME --file gpu_env.yml
 conda activate /path/to/your/folder/ENV_NAME 
 ```
-Then navigate to the destination folder. Create the conda environment with `python=3.11`
+Then navigate to the destination folder. Create the conda environment with `python=3.10`
 ```bash
-conda create --name /path/to/your/folder/ENV_NAME python=3.11
+conda create --name /path/to/your/folder/ENV_NAME python=3.10
 conda activate /path/to/your/folder/ENV_NAME 
 ```
 
@@ -166,9 +166,9 @@ Used NYU HPC Cluster to train the model
             <li><strong>CPU:</strong> 8 Virtualized Cores of Intel Xeon-Platinum 8286</li>
             <li><strong>GPU:</strong> Nvidia Quadro RTX 8000 and Nvidia V100</li>
             <li><strong>System Memory:</strong> 96 GB</li>
-            <li><strong>Python Version:</strong> 3.8.6</li>
-            <li><strong>CUDA Version:</strong> v11.8</li>
-            <li><strong>Torch Version:</strong> 2.2.2</li>
+            <li><strong>Python Version:</strong> 3.10.14</li>
+            <li><strong>CUDA Version:</strong> v12.1</li>
+            <li><strong>Torch Version:</strong> 2.3.0</li>
         </ul>
     </li>
 </ul>
