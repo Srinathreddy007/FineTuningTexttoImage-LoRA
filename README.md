@@ -71,7 +71,7 @@ The file is run using `test.sbatch` file </br>
 
 Navigate to the project folder:
 ```bash
-cd /scratch/your_net_id/Fine_Tuning_TexttoImage_LoRA/
+cd /scratch/your_net_id/FineTuningTexttoImage-LoRA/
 ```
 ### Modify the test.sbatch File to train the Model
 There is an `test.sbatch` file in the repository that needs to be modified to generate images. Open it using a text editor like vim or a command-line editor.
@@ -82,7 +82,7 @@ Change the line `--mail-user ` to receive updates about the model status:
 ```
 In the `test.sbatch` file, change the path to navigate to the folder:
 ```bash
-cd /scratch/your_net_id/Fine_Tuning_TexttoImage_LoRA/
+cd /scratch/your_net_id/FineTuningTexttoImage-LoRA/
 ```
 Replace the line that activates the environment:
 ```bash
@@ -108,7 +108,7 @@ Note: Checkpoint files have not been uploaded to the Git Repo as the files are v
 ### 2. Clone the Git Repo
 Clone the repository using the following command: 
 ``` bash
-git clone https://github.com/Srinathreddy007/Fine_Tuning_TexttoImage_LoRA.git
+git clone https://github.com/Srinathreddy007/FineTuningTexttoImage-LoRA.git
 ```
 ### 3. Create a Conda Environment
 Navigate to the destination folder. Create the conda environment using the `.yml` file provided in the repo and activate the environment.
