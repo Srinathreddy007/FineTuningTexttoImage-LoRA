@@ -2,6 +2,9 @@
 ## Abstract
 This project presents an advanced application of the Stable Diffusion Model for image generation from text prompts. Involving a three-part architecture comprising a CLIP Text Encoder, Variational Autoencoder (VAE), and UNet2D, our model demonstrates enhanced adaptability and efficiency. The CLIP Text Encoder optimizes general text understanding through a Transformer architecture. The VAE encodes image pixel values into a latent space, facilitating the generation of noise to condition image synthesis. Finally, UNet predicts noise residuals to refine image outputs. To improve efficiency further, we incorporate LoRA layers within the UNet, allowing fine-tuning to specific text prompts while retaining pre-trained weights, reducing computational demands, and enhancing image fidelity. This approach combines foundational image generation methodology with advanced tactics found in more recent studies, showcasing the efficacy of language models and newer architectural innovations in text-to-image generation.
 
+
+**The Slurm Output file contains the Model Architecture and Parameters**
+</br>
 <h2>Running the Code on HPC</h2> 
 Follow these steps to run the code on a High-Performance Computing (HPC) cluster.
 
@@ -15,7 +18,7 @@ cd /scratch/your_net_id/
 ### 2. Clone the Git Repo
 Clone the repository using the following command: 
 ``` bash
-git clone https://github.com/Srinathreddy007/Fine_Tuning_TexttoImage_LoRA.git
+git clone https://github.com/Srinathreddy007/FineTuningTexttoImage-LoRA.git
 ```
 
 ### 3. Create a Conda Environment
@@ -27,7 +30,7 @@ conda init
 
 Navigate to the project folder:
 ```bash
-cd /scratch/your_net_id/Fine_Tuning_TexttoImage_LoRA/
+cd /scratch/your_net_id/FineTuningTexttoImage-LoRA/
 ```
 ### 4. Modify the submit.sbatch File to train the Model
 There is an `submit.sbatch` file in the repository that needs to be modified to train the model on the HPC cluster. Open it using a text editor like vim or a command-line editor.
@@ -38,7 +41,7 @@ Change the line `--mail-user ` to receive updates about the model status:
 ```
 In the `submit.sbatch` file, change the path to navigate to the folder:
 ```bash
-cd /scratch/your_net_id/Fine_Tuning_TexttoImage_LoRA/
+cd /scratch/your_net_id/FineTuningTexttoImage-LoRA/
 ```
 Replace the line that activates the environment:
 ```bash
@@ -98,7 +101,6 @@ sbatch test.sbatch
 ```
 
 Note: Checkpoint files have not been uploaded to the Git Repo as the files are very large. </br>
-
 
 ## Caution: The GPU on local systems/ jupyter notebook would not be sufficient to load the model, hence it is adviced to run on HPC Cluster </br>
 
